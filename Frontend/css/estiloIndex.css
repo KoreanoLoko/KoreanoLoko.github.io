@@ -2,9 +2,9 @@ body{
     background-color: black;
 }
 
-.my-navbar {
-  background-color: black !important; /* Cambia este valor al color de fondo deseado */
-  color: #ffffff !important; /* Cambia este valor al color de texto deseado */
+.custom-navbar {
+  --bs-navbar-bg: #123456; /* Cambia este valor al color de fondo deseado */
+  --bs-navbar-color: #ffffff; /* Cambia este valor al color de texto deseado */
 }
 
 
