@@ -3,8 +3,8 @@ body{
 }
 
 .my-navbar {
-  background-color: black; /* Cambia este valor al color de fondo deseado */
-  color: #ffffff; /* Cambia este valor al color de texto deseado */
+  background-color: black !important; /* Cambia este valor al color de fondo deseado */
+  color: #ffffff !important; /* Cambia este valor al color de texto deseado */
 }
 
 
