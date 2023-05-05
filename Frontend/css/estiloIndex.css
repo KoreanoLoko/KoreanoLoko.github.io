@@ -1,0 +1,549 @@
+body{
+    background-color: black;
+}
+
+/* Clases generales */
+.seccion-clara {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.texto-negro {
+    color:#000000;
+}
+
+.texto-blanco {
+    color:#ffffff;
+}
+
+.btn-light {
+    font-size: 1.1rem;
+    margin: 20px;
+    font-weight: bold;
+}
+/* Estilo de la barra de scroll */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de scroll */
+}
+
+/* Estilo del thumb (el "agarre" de la barra de scroll) */
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color del thumb */
+    /* border-radius: 5px; Bordes redondeados */
+}
+
+/* Estilo del track (el fondo de la barra de scroll) */
+::-webkit-scrollbar-track {
+    background-color: #000000; /* Color del track */
+}
+
+/* Inicio carrusel */
+.carousel-custom {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.carousel-custom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Para el titulo */
+.carousel-text h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Para el subtitulo */
+.carousel-text h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Fin carrusel */
+
+
+/* Inicio "Sobre mi" */
+.sobre-mi {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sobre-mi-title {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sobre-mi-body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.map {
+    width: 560px;
+    height: 400px;
+}
+/* Fin "Sobre mi" */
+
+/* Inicio Experiencia */
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+    color: #ffffff;
+    padding: 20px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experiencia .columna:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges {
+    margin: 5px;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: black;
+    background-color: #ffffff;
+    padding: 6px 19px;
+    border-radius: 50%;
+}
+/* Fin Experiencia */
+
+/* Inicio proyectos */
+.proyectos-recientes {
+    padding: 25px;
+
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color:#ffffff;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Fin proyectos */
+
+/* Inicio Contacto */
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color:#000000;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px 1px #ffffff;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color:#ffffff;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 1.25rem 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.contacto button i {
+    color: #ffffff;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+    color: #000000;
+}
+/* Fin Contacto */
+
+/* Inicio Footer */
+footer {
+    min-height: 100px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.iconos-redes-sociales a {
+   width: 50px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2px;
+   margin: 10px;
+   border: 2px solid #ffffff;
+   border-radius: 50%;
+   transition: all 0.2 ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.2 ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.iconos-redes-sociales a:hover i {
+    color: #000000;
+}
+
+
+/* Fin Footer */
+
+/* 2077 pixeles */
+@media screen and (max-width: 2077px) {
+    .carousel-custom {
+        max-height: 250px;
+        overflow: hidden;
+    }
+
+    .carousel-custom img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Para el titulo */
+    .carousel-text h1 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    /* Para el subtitulo */
+    .carousel-text h2 {
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    /* Para el "Sobre mi" */
+    .sobre-mi {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .sobre-mi-title {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sobre-mi-body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .map {
+        width: 550px;
+        height: 400px;
+    }
+
+}
+
+/* 1200 pixeles */
+@media screen and (max-width: 1200px) {
+    .carousel-custom {
+        max-height: 170px;
+        overflow: hidden;
+    }
+
+    .carousel-custom img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Para el titulo */
+    .carousel-text h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    /* Para el subtitulo */
+    .carousel-text h2 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    /* Para el "Sobre mi" */
+    .sobre-mi {
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .sobre-mi-title {
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sobre-mi-body {
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .map {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+/* 767 pixeles */
+@media screen and (max-width: 767px) {
+
+    .carousel-custom {
+        max-height: 170px;
+        overflow: hidden;
+    }
+
+    .carousel-custom img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Para el titulo */
+    .carousel-text h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    /* Para el subtitulo */
+    .carousel-text h2 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    /* Para el "Sobre mi" */
+    .sobre-mi {
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .sobre-mi-title {
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sobre-mi-body {
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/* 549 pixeles */
+@media screen and (max-width: 549px) {
+    .carousel-custom {
+        max-height: 160px;
+        overflow: hidden;
+    }
+
+    .carousel-custom img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Para el titulo */
+    .carousel-text h1 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    /* Para el subtitulo */
+    .carousel-text h2 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    /* Para el "Sobre mi" */
+    .sobre-mi {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .sobre-mi-title {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sobre-mi-body {
+        font-size: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+}
+
+/* 280 pixeles */
+@media screen and (max-width: 280px) {
+    .carousel-custom {
+        max-height: 120px;
+        overflow: hidden;
+    }
+
+    .carousel-custom img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* Para el titulo */
+    .carousel-text h1 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    /* Para el subtitulo */
+    .carousel-text h2 {
+        font-size: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* Para el "Sobre mi" */
+    .sobre-mi {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .sobre-mi-title {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sobre-mi-body {
+        font-size: 8px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/* 244 pixeles */
+@media screen and (max-width: 244px) {
+    .carousel-custom {
+        max-height: 50px;
+        overflow: hidden;
+    }
+
+    .carousel-custom img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Para el titulo */
+    .carousel-text h1 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    /* Para el subtitulo */
+    .carousel-text h2 {
+        font-size: 5px;
+        margin-bottom: 5px;
+    }
+    
+}
